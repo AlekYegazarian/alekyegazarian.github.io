@@ -1,0 +1,69 @@
+<div class='sidebaritem' id='headshot'>
+	<img class='img img-responsive' src='/img/me.jpg' width='350'/>
+</div>
+
+<div class='sidebaritem' id='affiliations'>
+	<div class='sidebarheader'>Affiliations</div>
+	<div class='affiliationitem'><a target='_blank' href='http://lmu.edu'>Loyola Marymount University</a></div>
+	<div class='affiliationitem'><a target='_blank' href='https://cse.lmu.edu/department/electricalandcomputerengineeringdepartment/faculty/advisory/'>Electrical & Computer Engineering Department Board of Advisors</a></div>
+	<div><a target='_blank' href='https://www.magiccastle.com/'>The Academy of Magical Arts</a></div>
+</div>
+
+<div class='sidebaritem' id='contactinfo'>
+	<div class='sidebarheader'>Contact & Information</div>
+	<div>
+		<a href='mailto:Alek.Yegazarian@lmu.edu' style='text-decoration:none'>
+		  <img src='/img/icons/email.svg' type='image/svg+xml'
+		       width=36px style='vertical-align:middle'>
+		</a>
+        &nbsp;
+		<a target='_blank' href='https://www.linkedin.com/in/alek-yegazarian/' style='text-decoration:none'>
+		  <img src='/img/icons/linkedin.png'
+		       width=40px style='vertical-align:middle'>
+		</a>
+        &nbsp;
+        <a target='_blank' href='misc/cv.pdf' style='text-decoration:none'>
+		  <img src='/img/icons/cv.png'
+		       width=36px style='vertical-align:middle'>
+		</a>
+	</div>
+</div>
+
+<div class='sidebaritem' id='teaching'>
+	<div class='sidebarheader'>Teaching</div>
+
+	{% assign sorted_classes = site.data.teaching | sort: 'startdate' | reverse %}
+	{% for class in sorted_classes limit: 4 %}
+
+		<div class='teachingitem'>
+			<div class='teachingterm'>{{ class.term }}</div>
+			<a class='teachinglink' target='_blank' href='{{ class.link }}'>{{ class.number }}: {{ class.name }}</a>
+		</div>
+
+	{% endfor %}
+
+</div>
+
+<div class='sidebaritem' id='talks'>
+	<div class='sidebarheader'>Talks & Videos</div>
+	{% for talk in site.data.talks %}
+
+		<div class='resource'>
+			<a class='resourcelink' href='{{ talk.link }}' target='_blank'>{{ talk.title }}</a>
+			<p>{{ talk.venue }}</p>
+		</div>
+
+	{% endfor %}
+</div>
+
+<div class='sidebaritem' id='resources'>
+	<div class='sidebarheader'>Media</div>
+	{% for resource in site.data.resources %}
+
+		<div class='resource'>
+			<a class='resourcelink' href='{{ resource.link }}' target='_blank'>{{ resource.name }}</a>
+			<p>{{ resource.description }}</p>
+		</div>
+
+	{% endfor %}
+</div>

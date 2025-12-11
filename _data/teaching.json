@@ -1,0 +1,17 @@
+[
+	{
+		"startdate": "2026-01-12",
+		"term": "Spring 2026",
+		"number": "EECE 2210",
+		"name": "Circuits II",
+		"link": "https://bulletin.lmu.edu/course-descriptions/eece/"
+	},
+
+	{
+		"startdate": "2024-08-26",
+		"term": "Fall 2024",
+		"number": "EECE 3140",
+		"name": "Microprocessor/Microcontroller Systems",
+		"link": "https://bulletin.lmu.edu/course-descriptions/eece/"
+	}
+]

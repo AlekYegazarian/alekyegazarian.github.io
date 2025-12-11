@@ -1,0 +1,12 @@
+[
+	{
+		"id": "lmuoct",
+		"title": "Ultrafast Time-Stretch Optical Coherence Tomography with GPU Accelerated Post-Processing",
+		"authors": ["Alek Yegazarian", "Hossein Asghari"],
+		"venue": "URSI GASS 2021",
+		"date": "2021-09-01",
+		"links":  [
+			{"type": "link", "name": "Conference Proceeding", "target": "https://www.ursi.org/proceedings/procGA21/prog-com.html"}
+		]
+	}
+]
